@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>V</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/v-icon.png" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/maincss.css">
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="faq.html">
+  <link rel="stylesheet" href="article.html">
+  <link rel="stylesheet" href="user profile.html">
+  <link rel="stylesheet" href="contact us.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body> <!--header-->
+  <header class="header section" data-header>
+    <div class="container">
+      <a href="" class="logo"><img src="images/vlogo.png" width="50" height="40"></a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link hover:underline" data-nav-link>Home</a></li>
+          <li class="navbar-item"><a href="article.html" class="navbar-link hover:underline" data-nav-link>Articles</a></li>
+          <li class="navbar-item"><a href="faq.html" class="navbar-link hover:underline" data-nav-link>FAQ</a></li>
+          <li class="navbar-item"><a href="contact us.html" class="navbar-link hover:underline" data-nav-link>Contact Us</a></li>
+          <li class="navbar-item"><a href="user profile.html" class="navbar-link hover:underline" data-nav-link>User Profile</a></li>
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          <span class="span">Search</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+
+        <a href="Log in.html" class="btn">Log in</a>
+        <div class="user-icon" data-dropdown>
+        </div>
+    </div>
+  </header> <!--end of header-->
+
+
+<!--search bar-->
+  <div class="search-bar" data-search-bar>
+    <div class="input-wrapper">
+      <input type="search" name="search" placeholder="Search" class="input-field">
+      <button class="search-close-btn" aria-label="close search bar" data-search-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+    <p class="search-bar-text">Search V</p>
+  </div>
+  <div class="overlay" data-overlay data-search-toggler></div>
+<!--end  of search bar-->
+
+<!--Herp section-->
+  <main>
+    <article>
+      <section class="section hero" aria-label="home">
+        <div class="container">
+          <h1 class="h1 hero-title"><strong class="strong">Welcome to V.</strong> See our thoughts, stories and ideas.</h1>
+
+          <div class="wrapper">
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Post an Article" class="email-field">
+              <button type="submit" class="btn">Post</button>
+            </form>
+             <p class="newsletter-text">Get ready to be motivated and start something new today!</p>
+          </div>
+        </div>
+      </section> <!--end of hero section-->
+
+      <!--start ng features-->
+      <section class="section featured" aria-label="featured post">
+        <div class="container">
+          <p class="section-subtitle">Get started with our <strong class="strong">best stories</strong></p>
+
+          <ul class="has-scrollbar"> <!--first card-->
+            <li class="scrollbar-item">
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="images/dinosaur1.jpg" width="500" height="600" loading="lazy" class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--author sa baba ng card-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author1.jpg" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+
+                    <li class="avatar-item"> <!--author sa baba ng card-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author2.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure>
+                  <!--tag-->
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li><a href="#" class="card-tag">College</a></li>
+                    <li><a href="#" class="card-tag">Idea</a></li>
+                    <li><a href="#" class="card-tag">Review</a></li>
+                  </ul> <!--end of tag-->
+
+                  <!--card title-->
+                  <h3 class="h4">
+                    <a href="#" class="card-title hover:underline">Tips for Managing Time Effectively in College</a>
+                  </h3>
+                  <p class="card-text">
+                    How can college students manage their time effectively to balance academics, social life, and extracurriculars?</p>
+                </div>
+              </div>
+            </li> <!--end of card title-->
+
+            <li class="scrollbar-item"> <!--second card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="images/dinosaur2.jpg" width="500" height="600" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author3.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure><!--end of 2nd card-->
+
+                 <!--card tag-->
+                <div class="card-content">
+                  <ul class="card-meta-list">
+                    <li><a href="#" class="card-tag">Creative</a></li>
+                    <li><a href="#" class="card-tag">Product</a></li>
+                  </ul><!--end of card tag-->
+
+                  <h3 class="h4">  <!--card title-->
+                    <a href="#" class="card-title hover:underline">Essential Tech Gadgets for College Students</a>
+                  </h3>
+                  <p class="card-text">What are the must-have tech gadgets for today’s college students?</p>
+                </div>
+              </div>
+            </li>  <!--end of card title-->
+
+            <li class="scrollbar-item"> <!--3rd card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="images/dinosaur3.jpg" width="500" height="600" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--auhtor profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author4.avif" width="100" height="100" loading="lazy" class="img-cover"> </a>
+                    </li>
+                  </ul>
+                </figure> <!--end of 3rd card-->
+
+                <div class="card-content"> <!--card tag-->
+                  <ul class="card-meta-list">
+                    <li><a href="#" class="card-tag">College</a></li>
+                    <li><a href="#" class="card-tag">Creative</a></li>
+                    <li><a href="#" class="card-tag">Idea</a></li> 
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4">  <!--card title-->
+                    <a href="#" class="card-title hover:underline">The Ultimate Guide to College Dorm Living</a>
+                  </h3>
+                  <p class="card-text">What do new students need to know about living in a college dorm?</p>
+                </div>
+              </div>
+            </li>  <!--end of card title-->
+
+            <li class="scrollbar-item"> <!--4th card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="images/dinosaur4.png" width="500" height="600" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--auhtor profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author5.avif" width="100" height="100" loading="lazy"  class="img-cover"></a>
+                    </li>
+                    <li class="avatar-item"> <!--auhtor profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author6.jpg" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure> <!--end of 4th card-->
+
+                <div class="card-content"> <!--card tag-->
+                  <ul class="card-meta-list">
+                    <li><a href="#" class="card-tag">People</a></li>
+                    <li><a href="#" class="card-tag">Story</a></li>
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4">  <!--card title-->
+                    <a href="#" class="card-title hover:underline">Everyone has a different life story</a>
+                  </h3>
+                  <p class="card-text">
+                    Have you ever paused to consider how no two life stories are exactly the same? From the moment we're born, 
+                    numerous factors—family, culture, opportunities, challenges—begin to weave the unique tapestry of our lives.</p>
+                </div>
+              </div>
+            </li>  <!--end of card title-->
+
+            <li class="scrollbar-item"> <!--5th card-->
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="images/dinosaur5.jpg" width="500" height="600" loading="lazy" class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--auhtor profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author7.jpg" width="100" height="100" loading="lazy"  class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure> <!--end of 5th card-->
+
+                <div class="card-content"> <!--card tag-->
+                  <ul class="card-meta-list">
+                    <li><a href="#" class="card-tag">Lifestyle</a></li>
+                    <li><a href="#" class="card-tag">Idea</a></li>
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4">  <!--card title-->
+                    <a href="#" class="card-title hover:underline">Balancing Part-Time Jobs With College Studies</a>
+                  </h3>
+                  <p class="card-text">How can students successfully balance a part-time job while keeping up with their college coursework?</p>
+                </div>
+              </div>
+            </li>  <!--end of card title-->
+
+            <li class="scrollbar-item"> <!--6th card-->
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                  <img src="images/dinosaur9.jpg" width="500" height="600" loading="lazy" class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--auhtor profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author8.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure> <!--end of 6th card-->
+
+                <div class="card-content"> <!--card tag-->
+                  <ul class="card-meta-list">
+                    <li><a href="#" class="card-tag">Idea</a></li>
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4">  <!--card title-->
+                    <a href="#" class="card-title hover:underline">Studying Abroad: Everything You Need to Know</a>
+                  </h3>
+                  <p class="card-text">What should students consider when planning to study abroad?</p>
+                </div>
+              </div>
+            </li>  <!--end of card title-->
+          </ul>
+        </div>
+      </section> <!--end of first features -->
+
+      <!--recent post-->
+      <section class="section recent" aria-label="recent post">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">See what we’ve <strong class="strong">written lately</strong></h2>
+
+            <div class="top-author"> <!--top authors profiles-->
+              <ul class="avatar-list">
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="images/author9.avif" width="100" height="100" class="img-cover"></a>
+                </li>
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="images/author10.avif" width="100" height="100" class="img-cover"></a>
+                </li>
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="images/author11.jpg" width="100" height="100" class="img-cover"></a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="images/author12.avif" width="100" height="100" class="img-cover">
+                  </a>
+                </li>
+
+                <li class="avatar-item">
+                  <a href="#" class="avatar large img-holder" style="--width: 100; --height: 100;">
+                    <img src="images/author13.avif" width="100" height="100" class="img-cover">
+                  </a>
+                </li>
+              </ul><!--edn of top author profiles-->
+              <span class="span">Meet our top authors</span>
+            </div>
+          </div>
+
+          <ul class="grid-list">
+            <li>
+             
+              <div class="blog-card"> <!--first card-->
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="images/dinosaur7.jpg" width="550" height="660" loading="lazy"  class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--authors profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author14.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+
+                    <li class="avatar-item"> <!--authors profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author15.jpg" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure> 
+
+                <div class="card-content"> 
+                  <ul class="card-meta-list"> <!--card tag-->
+                    <li><a href="#" class="card-tag">Lifestyle</a></li>
+                    <li><a href="#" class="card-tag">People</a></li>
+                  </ul> <!-- end of card tag-->
+
+                  <h3 class="h4"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">How to Build and Maintain New Friendships in College</a>
+                  </h3>
+                  <p class="card-text">What are effective ways for students to meet new people and build lasting friendships in college?</p>
+                </div><!--end of card title-->
+              </div>
+            </li> <!--end of 1st card-->
+
+            <li> <!--2nd card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="images/dinosaur8.jpg" width="550" height="660" loading="lazy" class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--auhtor profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author16.jpg" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content"> <!--card tag-->
+                  <ul class="card-meta-list">
+                    <li><a href="#" class="card-tag">Product</a></li>
+                    <li><a href="#" class="card-tag">Idea</a></li>
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Being unique is better than being perfect</a>
+                  </h3>
+                  <p class="card-text">Why is embracing your uniqueness more beneficial than striving for perfection?</p>
+                </div>
+              </div><!--end of card title-->
+            </li> <!--end of 2nd card-->
+
+            <li> <!--start of 3rd card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="images/dinosaur10.jpg" width="550" height="660" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute"> <!--author with profile at the bottom-->
+                    <li class="avatar-item">
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author17.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                      </li>
+                    <li class="avatar-item"> <!--author with profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author18.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                    <li class="avatar-item"> <!--author with profile at the bottm-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author19.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul> 
+                </figure> 
+
+                <div class="card-content"> 
+                  <ul class="card-meta-list"> <!--card tag-->
+                    <li><a href="#" class="card-tag">Idea</a></li>
+                    <li><a href="#" class="card-tag">College</a></li>
+                    <li><a href="#" class="card-tag">Review</a></li>
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Preparing for Life After College</a>
+                  </h3>
+                  <p class="card-text">What should students do in college to prepare for the transition to post-grad life?</p>
+                </div> <!--end of card title-->
+              </div> 
+            </li> <!--end of 3rd card-->
+
+            <li> <!--start of 4th card-->
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="images/dinosaur11.jpg" width="550" height="660" loading="lazy" class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author20.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                      </li> <!--end of author profile-->
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+                  <ul class="card-meta-list"> <!--Card tag-->
+                    <li><a href="#" class="card-tag">Lifestyle</a></li>
+                    <li><a href="#" class="card-tag">Mental Health</a></li>
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Tips for Managing College Stress</a>
+                  </h3>
+                  <p class="card-text">How can students effectively manage stress throughout the college experience?</p>
+                </div>
+              </div>
+            </li> <!--end of 4th card-->
+
+            <li> <!--start of 5th card-->
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="images/dinosaur12.jpg" width="550" height="660" loading="lazy" class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--aurthor profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author21.jpg" width="100" height="100" loading="lazy"class="img-cover"></a>
+                      </li>
+                    <li class="avatar-item"> <!--author profile at the bottom -->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author22.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                      </li>
+                  </ul> <!--end of author profile-->
+                </figure> 
+
+                <div class="card-content">
+                  <ul class="card-meta-list"> <!--card tag-->
+                    <li><a href="#" class="card-tag">People</a></li>
+                    <li><a href="#" class="card-tag">Story</a></li>
+                    <li><a href="#" class="card-tag">Lifestyle</a></li>
+                  </ul> <!--end of card tag-->
+
+                  <h3 class="h4"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">How to Balance Social Life and Academics</a></h3>
+                  <p class="card-text">What strategies can help students enjoy a fulfilling social life without compromising their grades?</p>
+                </div>
+              </div> 
+            </li> <!--end of 5th card-->
+
+            <li> <!--start of 6th card-->
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 550; --height: 660;">
+                  <img src="images/dinosaur13.jpg" width="550" height="660" loading="lazy" class="img-cover">
+                  <ul class="avatar-list absolute">
+
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author23.avif" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+                  <ul class="card-meta-list"> <!--card tag-->
+                    <li><a href="#" class="card-tag">People</a></li>
+                    <li><a href="#" class="card-tag">Story</a></li>
+                  </ul> <!-- end of card tag-->
+
+                  <h3 class="h4"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Dealing with Roommate Conflicts: A Guide</a>
+                  </h3>
+                  <p class="card-text">What steps can students take to resolve disputes with roommates amicably and maintain a peaceful living environment?</p>
+                </div>
+              </div> <!--end of card title-->
+            </li> <!--end of 6th card-->
+          </ul>
+
+          <button class="btn">Load more</button>
+        </div>
+      </section>
+
+      <!--recommended-->
+      <section class="section recommended" aria-label="recommended post">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <strong class="strong">Recommended</strong>
+          </p>
+
+          <ul class="grid-list"> 
+            <li>
+              <div class="blog-card"> <!--first card-->
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;"> <!--card-->
+                  <img src="images/dinosaur17.jpg" width="300" height="360" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author24.png" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author25.png" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul> <!--end of card-->
+                </figure>
+
+                <div class="card-content"> 
+                  <h3 class="h5"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Tips for First-Year Students to Make the Most of College</a></h3>
+                </div> <!--end card title-->
+              </div>
+            </li> <!--end of 1st card-->
+
+            <li>
+              <div class="blog-card"> <!--2nd card-->
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="images/dinosaur15.jpg" width="300" height="360" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author26.png" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li> 
+                  </ul>
+                </figure> 
+
+                <div class="card-content">
+                  <h3 class="h5"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Planning Post-Graduation Life</a></h3>
+                </div><!--end of card title-->
+              </div>
+            </li> <!--end of 2nd card-->
+
+            <li> <!--start of 3rd card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="images/dinosaur16.avif" width="300" height="360" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author27.png" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Dealing with Academic Disappointment</a></h3>
+                </div>
+              </div>
+            </li> <!--end of 3rd card-->
+
+            <li> <!--start of 4th card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="images/dinosaur14.jpg" width="300" height="360" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author28.png" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author29.png" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Student Leadership: Becoming a Campus Leader</a></h3>
+                </div><!--end of card title-->
+              </div>
+            </li> <!--end of 4th card-->
+
+            <li> <!--start of 5th card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="images/dinosaur18.jpg" width="300" height="360" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author30.png" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Studying Tips for Different Types of Learners</a></h3>
+                </div>
+              </div>
+            </li> <!--end of 5th card-->
+
+            <li> <!--start of 6th card-->
+              <div class="blog-card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 360;">
+                  <img src="images/dinosaur19.jpg" width="300" height="360" loading="lazy" class="img-cover">
+
+                  <ul class="avatar-list absolute">
+                    <li class="avatar-item"> <!--author profile at the bottom-->
+                      <a href="#" class="avatar img-holder" style="--width: 100; --height: 100;">
+                        <img src="images/author31.jpg" width="100" height="100" loading="lazy" class="img-cover"></a>
+                    </li>
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5"> <!--card title-->
+                    <a href="#" class="card-title hover:underline">Effective Communication with Professors</a></h3>
+                </div>
+              </div>
+            </li> <!--end of 6th card-->
+          </ul> 
+        </div>
+      </section> <!--end of recommended section-->
+
+<!--newsletter-->
+      <section class="section newsletter">
+
+        <h2 class="h2 section-title">
+          Sign up for <strong class="strong">new post</strong></h2>
+        <form action="" class="newsletter-form">
+          <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+          <button type="submit" class="btn">Log in</button></form>
+      </section>
+    </article>
+  </main>
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top section">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="images/vlogo.png" width="129" height="40"></a>
+          <p class="footer-text">
+            Every post is crafted with care, ensuring that our readers leave with fresh ideas and practical tips.
+             Stay with us on this journey to explore and grow.</p>
+        </div>
+        <ul class="footer-list"> <!--follow us section-->
+          <li> <p class="h5">Follow Us</p></li>
+          <li class="footer-list-item">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="#" class="footer-link hover:underline">Facebook</a></li>
+          <li class="footer-list-item">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <a href="#" class="footer-link hover:underline">Twitter</a></li>
+          <li class="footer-list-item">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <a href="#" class="footer-link hover:underline">Instagram</a></li>
+        </ul> <!--end of follow us section-->
+
+        <ul class="footer-list"> <!--about section-->
+          <li><p class="h5">About</p></li>
+          <li><a href="#" class="footer-link hover:underline">Features</a></li>
+          <li><a href="#" class="footer-link hover:underline">Contact</a></li>
+          <li><a href="#" class="footer-link hover:underline">404</a></li>
+          <li><a href="#" class="footer-link hover:underline">Privacy Policy</a></li>
+        </ul><!--end of about section-->
+
+        <ul class="footer-list"><!--features section-->
+          <li><p class="h5">Features</p></li>
+          <li><a href="#" class="footer-link hover:underline">Upcoming Events</a></li>
+          <li><a href="#" class="footer-link hover:underline">Blog & News</a></li>
+          <li><a href="#" class="footer-link hover:underline">Features</a></li>
+          <li><a href="#" class="footer-link hover:underline">FAQ Question</a></li>
+        </ul> <!--end of features section-->
+      </div> <!--end of footer-->
+
+      <div class="section footer-bottom">
+        <p class="copyright">
+          &copy; <a href="#" class="copyright-link hover:underline">V </a> 2024.</p>
+      </div>
+
+    </div>
+  </footer>
+<!--js-->
+  <script src="assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/dropdown.js" defer></script>
+</body>
+</html>

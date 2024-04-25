@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>V</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/v-icon.png" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="faq.html">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+
+    .contact-section {
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: calc(100% - 22px);
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #333;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .btn-send-message {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      outline: none; /* Remove default focus outline */
+    }
+
+    .btn-send-message:hover {
+      background-color: #000000;
+    }
+
+    .btn-send-message:active {
+      transform: translateY(2px); /* Add slight downward movement on click */
+    }
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .success-message {
+      color: green;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      margin-bottom: 10px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      border-bottom: 1px solid #fff;
+    }
+
+    .form-group textarea {
+      border: 1px solid #fff;
+    }
+
+    .btn-send-message {
+      background-color: #000000;
+      background-image: linear-gradient(to bottom, #000000, #000000);
+      border: 1px solid #000000;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .btn-send-message:hover {
+      background-color: #000000;
+      border-color: #000000;
+    }
+
+    .btn-send-message:active {
+      transform: translateY(2px);
+    }
+
+    @media (max-width: 768px) {
+      .contact-section h1 {
+        font-size: 36px;
+      }
+
+      .contact-form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--header-->
+  <header class="header section" data-header>
+    <div class="container">
+      <a href="" class="logo"><img src="images/vlogo.png" width="50" height="40"></a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link hover:underline" data-nav-link>Home</a></li>
+          <li class="navbar-item"><a href="#" class="navbar-link hover:underline" data-nav-link>Articles</a></li>
+          <li class="navbar-item"><a href="faq.html" class="navbar-link hover:underline" data-nav-link>FAQ</a></li>
+          <li class="navbar-item"><a href="#" class="navbar-link hover:underline" data-nav-link>Contact Us</a></li>
+          <li class="navbar-item"><a href="user profile.html" class="navbar-link hover:underline" data-nav-link>User Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--end of header-->
+
+  <div class="container">
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <p>Questions, bug reports, feedback - we're here for it all.</p>
+      <div class="contact-form">
+        <form id="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <div class="error-message" id="name-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <div class="error-message" id="email-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <div class="error-message" id="message-error"></div>
+          </div>
+          <button type="submit" class="btn-send-message">Send Message</button>
+          <div class="success-message" id="success-message"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top section">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="images/vlogo.png" width="129" height="40"></a>
+          <p class="footer-text">
+            Every post is crafted with care, ensuring that our readers leave with fresh ideas and practical tips.
+             Stay with us on this journey to explore and grow.</p>
+        </div>
+        <ul class="footer-list"> <!--follow us section-->
+          <li> <p class="h5">Follow Us</p></li>
+          <li class="footer-list-item">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="#" class="footer-link hover:underline">Facebook</a></li>
+          <li class="footer-list-item">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <a href="#" class="footer-link hover:underline">Twitter</a></li>
+          <li class="footer-list-item">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <a href="#" class="footer-link hover:underline">Instagram</a></li>
+        </ul> <!--end of follow us section-->
+
+        <ul class="footer-list"> <!--about section-->
+          <li><p class="h5">About</p></li>
+          <li><a href="#" class="footer-link hover:underline">Features</a></li>
+          <li><a href="#" class="footer-link hover:underline">Contact</a></li>
+          <li><a href="#" class="footer-link hover:underline">404</a></li>
+          <li><a href="#" class="footer-link hover:underline">Privacy Policy</a></li>
+        </ul><!--end of about section-->
+
+        <ul class="footer-list"><!--features section-->
+          <li><p class="h5">Features</p></li>
+          <li><a href="#" class="footer-link hover:underline">Upcoming Events</a></li>
+          <li><a href="#" class="footer-link hover:underline">Blog & News</a></li>
+          <li><a href="#" class="footer-link hover:underline">Features</a></li>
+          <li><a href="#" class="footer-link hover:underline">FAQ Question</a></li>
+        </ul> <!--end of features section-->
+      </div> <!--end of footer-->
+
+      <div class="section footer-bottom">
+        <p class="copyright">
+          &copy; <a href="#" class="copyright-link hover:underline">V </a> 2024.</p>
+      </div>
+
+    </div>
+  </footer>
+<!--js-->
+  <script src="assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/dropdown.js" defer></script>
+</body>
+</html>
